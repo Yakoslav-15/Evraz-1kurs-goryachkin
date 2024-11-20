@@ -1,4 +1,4 @@
-div {
+div
     display: grid;
     grid-template-columns: 200px 120px auto;
 }
