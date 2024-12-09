@@ -1,33 +1,98 @@
 let a = 0
-let total= document.getElementById('total')
-function make() {
-    let total= document.getElementById('total')
-    total.style =''
-}
-let a = 1
-function make2() {
 let total = document.getElementById('total')
-total.style = ''
-    a = 1
+let bod = document.getElementById('body')
+
+function make() {
+    a = 0;
+    total.innerText = a;
+    bod.style.backgroundColor = 'black';
+    bod.style.color = 'white';
 }
 
-let a = 2
+function make2() {
+    a = 1;
+    total.innerText = a;
+    bod.style.backgroundColor = 'white';
+    bod.style.color = 'black';
+}
+
 function make3() {
-    let total = document.getElementById('total')
-d = 2
+    a = 2;
+    total.innerText = a;
+    bod.style.backgroundColor = 'blue';
+    bod.style.color = 'white';
 }
-let a = 5
+
 function make4() {
-    let total = document.getElementById('total')
-total.style = ''
-
+    a = 5;
+    total.innerText = a;
+    bod.style.backgroundColor = 'green';
+    bod.style.color = 'white';
 }
-let a
+
 function make5() {
-    let total = document.getElementById('total')
-    total.style = ''
+    a = a + 1;
+    total.innerText = a;
 
+    if (a === 0) {
+        bod.style.backgroundColor = 'black';
+        bod.style.color = 'white';
+    }
+    else if (a === 1) {
+        bod.style.backgroundColor = 'white';
+        bod.style.color = 'black';
+    }
+
+    else if (a === 2)
+    {
+        bod.style.backgroundColor = 'blue';
+        bod.style.color = 'white';
+    }
+
+    else if (a === 5)
+    {
+        bod.style.backgroundColor = 'green';
+        bod.style.color = 'white';
+    }
 }
+
+function make6() {
+    a = a - 1;
+    total.innerText = a;
+
+    if (a === 0) {
+        bod.style.backgroundColor = 'black';
+        bod.style.color = 'white';
+    }
+    else if (a === 1) {
+        bod.style.backgroundColor = 'white';
+        bod.style.color = 'black';
+    }
+
+    else if (a === 2)
+    {
+        bod.style.backgroundColor = 'blue';
+        bod.style.color = 'white';
+    }
+
+    else if (a === 5)
+    {
+        bod.style.backgroundColor = 'green';
+        bod.style.color = 'white';
+    }
+
+    if (a % === 0){
+        bod.style.backgroundColor ='red'
+            bod.style.color= 'black'
+    }
+    else if (a % === 1){
+        bod.style.backgroundColor='yellow'
+        bod.style.color='black'
+    }
+}
+
+
+
 
 
 
