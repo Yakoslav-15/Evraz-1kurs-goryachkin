@@ -32,7 +32,7 @@ function make4() {
 
 function make5() {
     a = a + 1;
-    total.innerText = a;
+    total.innerText = a ;
 
     if (a === 0) {
         bod.style.backgroundColor = 'black';
@@ -53,6 +53,14 @@ function make5() {
     {
         bod.style.backgroundColor = 'green';
         bod.style.color = 'white';
+    }
+    else if (a %2 === 0){
+        bod.style.backgroundColor ='red'
+        bod.style.color= 'black'
+    }
+    else if (a %2 === 1){
+        bod.style.backgroundColor='yellow'
+        bod.style.color='black'
     }
 }
 
@@ -69,23 +77,21 @@ function make6() {
         bod.style.color = 'black';
     }
 
-    else if (a === 2)
-    {
+    else if (a === 2) {
         bod.style.backgroundColor = 'blue';
         bod.style.color = 'white';
     }
 
-    else if (a === 5)
-    {
+    else if (a === 5) {
         bod.style.backgroundColor = 'green';
         bod.style.color = 'white';
     }
 
-    if (a % === 0){
+    else if (a %2 === 0){
         bod.style.backgroundColor ='red'
-            bod.style.color= 'black'
+        bod.style.color= 'black'
     }
-    else if (a % === 1){
+    else if (a %2 === 1){
         bod.style.backgroundColor='yellow'
         bod.style.color='black'
     }
