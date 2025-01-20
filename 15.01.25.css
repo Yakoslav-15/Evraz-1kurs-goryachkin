@@ -31,9 +31,6 @@ body {
     align-items: center;
 
 }
-head-top-logo .logo {
-
-}
 
 .head-bottom {
     flex: 1 1 auto;
@@ -42,5 +39,9 @@ head-top-logo .logo {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url('https://get.wallhere.com/photo/sunlight-trees-landscape-sunset-flowers-hill-nature-sky-clouds-sunrise-evening-morning-HDR-wilderness-dusk-path-cloud-tree-autumn-mountain-flower-dawn-meadow-prairie-rural-area-atmospheric-phenomenon-mountainous-landforms-mountain-range-meteorological-phenomenon-50773.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
