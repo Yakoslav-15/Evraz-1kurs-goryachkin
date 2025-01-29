@@ -3,34 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link
-            rel="stylesheet"
-            href="15.01.25.css"
-    >
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .per {
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
-<div> <h1>Имена</h1> </div>
-<button onclick="addLi()">Добавить</button>
+<div class="per">
+    <div class="per-w"><h1> Имена </h1></div>
+    <div> Укажите имя</div>
+    <input type="text" id="name">
+<div> Сколько добавить?</div>
+    <input type="text" id="name2">
+    <button onclick="addLi()">Добавить</button>
+    <div><h1> Место для добавления</h1></div>
+    <i>
+        <ul id="add" style="color: green">
+            <li class="">Павел</li>
+        </ul>
+    </i>
+</div>
 
-<input type="text" id="name" >
-<div> <h1> Место для добавления</h1></div>
-<i> <ul   id="add" style="color: green" >
-   <li class="">Павел</li>
-</ul>
-</i>
 
-
-<div> <h1>Города</h1> </div>
-<button onclick="addLi()">Добавить</button>
-
-<input type="text" id="name" >
-<div> <h1> Место для добавления</h1></div>
-<u> <ul   id="add" style="color: red" >
-   <li class=""></li>
-
-</ul>
-</u>
-
+<div class="per">
+    <div class="per-t"><h1>Города</h1></div>
+    <div> Укажите город</div>
+    <input type="text" id="name3">
+    <div> Сколько добавить?</div>
+    <input type="text" id="name4">
+    <button onclick="addLi2()">Добавить</button>
+    <div><h1> Место для добавления</h1></div>
+    <u>
+        <ul id="add2" style="color: red">
+            <li class="">Н.Тагил</li>
+        </ul>
+    </u>
+</div>
 <script src="27 01.js"></script>
 </body>
 </html>

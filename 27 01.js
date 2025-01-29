@@ -13,6 +13,31 @@ function addLi() {
 
         addElement.append(liElement);
 
+
         input.value = '';
     }
 }
+
+function addLi2() {
+    let addElement = document.getElementById('add2');
+    let input = document.getElementById('name2')
+    let liElement = document.createElement('li');
+
+    if (input.value === '') {
+        alert('Добавь значение')
+    }
+    else {
+        liElement.innerText = input.value;
+
+
+
+        addElement.append(liElement);
+
+        input.value = '';
+    }
+
+}
+
+
+
+
