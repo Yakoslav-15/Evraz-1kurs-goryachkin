@@ -2,7 +2,6 @@ function addLi() {
     let addElement = document.getElementById('add');
     let input = document.getElementById('name')
     let liElement = document.createElement('li');
-
     if (input.value === '') {
         alert('Добавь значение')
     }
@@ -15,6 +14,7 @@ function addLi() {
 
 
         input.value = '';
+
     }
 }
 
@@ -37,6 +37,11 @@ function addLi2() {
     }
 
 }
+
+
+
+
+
 
 
 
