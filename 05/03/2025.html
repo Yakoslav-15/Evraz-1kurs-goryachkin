@@ -29,6 +29,10 @@
             display: none !important;
         }
 
+        #discountDom2 {
+            display: none !important;
+        }
+
         .tovar {
             background-color: #f0f0f0;
             width: 500px;
@@ -143,6 +147,21 @@
         <div>Скидка, %</div>
         <input type="number" value="0" id="discount">
     </div>
+
+
+    <div class="item">
+
+        <div>Способ оплаты</div>
+        <div>
+            <input type="radio" id="nal" name="discount2" value="true" onclick="discount2(true)">
+            <label for="nal">Наличные</label>
+
+            <input type="radio" id="bez" name="discount2" value="false" checked onclick="discount2(false)">
+            <label for="bez">Безнал</label>
+        </div>
+    </div>
+
+
 
     <div class="item">
         <div>Особенности</div>

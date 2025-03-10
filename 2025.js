@@ -5,6 +5,7 @@ let selectCategory2 = document.getElementById('category2');
 let inputPrice = document.getElementById('price');
 let inputCount = document.getElementById('count');
 let inputDiscount = document.getElementById('discount');
+let inputDiscount2 = document.getElementById('discount2');
 let inputDescription = document.getElementById('description');
 let inputDescription2 = document.getElementById('description2');
 
@@ -41,7 +42,7 @@ function addTovar() {
     cardTovar.classList.add('tovar');
 
     // создаем html наполнение для блока с ценой
-    let price = ``;
+    let price = "";
 
     // проверим, а есть ли в discountChoose.value значение
     if (discountChoose.value === 'true') {
@@ -71,8 +72,10 @@ function addTovar() {
 
     let card = `<div class="tovar-name">${ inputName.value }</div>
             <div class="tovar-category">${ categories[selectCategory.value] }</div>
+            <div class="tovar-category2">${ categories[selectCategory2.value] }</div>
             <div class="tovar-specials">Особенности: ${ specialsText }</div>
             <div class="tovar-description">${ inputDescription.value }</div>
+             <div class="tovar-description2">${ inputDescription2.value }</div>
             <div class="tovar-price-count">
                 ${ price }
                 <div class="count">Количество: ${ inputCount.value } шт.</div>
