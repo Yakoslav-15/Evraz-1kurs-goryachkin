@@ -8,6 +8,16 @@ let inputDiscount = document.getElementById('discount');
 let inputDiscount2 = document.getElementById('discount2');
 let inputDescription = document.getElementById('description');
 let inputDescription2 = document.getElementById('description2');
+let form = document.getElementById('form');
+let buttonAdd = document.getElementById('button-add');
+let buttonEdit = document.getElementById('button-edit');
+let titleAdd = document.getElementById('title-add')
+let titleEdit = document.getElementById('title-edit')
+
+let products = [];
+
+
+let currentEditProduct = null;
 
 let categories = {
     'clothes': 'Одежда',
@@ -82,6 +92,3 @@ function addTovar() {
             </div>
             <div class="tovar-close">X</div>`
 
-    cardTovar.innerHTML = card;
-    listDOM.append(cardTovar);
-}
